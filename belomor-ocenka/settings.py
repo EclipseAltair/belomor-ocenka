@@ -33,7 +33,7 @@ MIDDLEWARE = [
     'livereload.middleware.LiveReloadScript',
 ]
 
-ROOT_URLCONF = 'set_fullstack.urls'
+ROOT_URLCONF = 'belomor-ocenka.urls'
 
 TEMPLATES = [
     {
@@ -52,7 +52,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'set_fullstack.wsgi.application'
+WSGI_APPLICATION = 'belomor-ocenka.wsgi.application'
 
 DATABASES = {
     'default': {
