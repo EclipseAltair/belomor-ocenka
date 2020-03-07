@@ -1,21 +1,70 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block canonical %}<link rel="canonical" href=""/>{% endblock %}
-{% block title %}<title></title>{% endblock %}
-{% block description %}<meta name="description" content="">{% endblock %}
-{% block keywords %}<meta name="keywords" content="">{% endblock %}
+{% block canonical %}<link rel="canonical" href="https://belomor-ocenka.ru"/>{% endblock %}
+{% block title %}<title>Оценка после ДТП 🚗 Автоэкспертиза 🚗 Беломор Оценка | Архангельская область</title>{% endblock %}
+{% block description %}<meta name="description" content="Беломор оценка - проводим все виды независимых оценок и автоэкспертиз. Предварительная оценка. Выезд эксперта.">{% endblock %}
+{% block keywords %}<meta name="keywords" content="автоэкспертиза, оценка, после дтп, после аварии, оценка авто, оценка автомобиля">{% endblock %}
 {% block og %}
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="">
-    <meta property="og:title" content="">
-    <meta property="og:url" content="">
+    <meta property="og:site_name" content="Belomor-ocenka">
+    <meta property="og:title" content="Беломор оценка">
+    <meta property="og:url" content="https://belomor-ocenka.ru">
     <meta property="og:locale" content="ru_RU">
-    <meta property="og:image" content="http://site.site/static/img/og.png">
+    <meta property="og:image" content="https://belomor-ocenka.ru/static/img/og.png">
     <meta property="og:image:width" content="537">
     <meta property="og:image:height" content="240">
 {% endblock %}
 
 {% block content %}
-дарова
+    <section id="hero" class="hero">
+        <div class="background-image" style="background-image: url(static/img/bg.jpg);"></div>
+        <h1>Беломор Оценка</h1>
+        <h3>Все виды оценок и автоэкспертиз. Выезд эксперта.</h3>
+        <a href="tel:+79523002888" class="btn btn-phone">+7 (952) 300-28-88</a>
+    </section>
+
+    <section id="our-work" class="our-work">
+        <h3 class="title">Some of our work</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi
+            vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
+        <hr>
+
+        <ul class="grid">
+            <li class="small" style="background-image: url(static/img/coast.jpg);"></li>
+            <li class="large" style="background-image: url(static/img/island.jpg);"></li>
+            <li class="large" style="background-image: url(static/img/balloon.jpg);"></li>
+            <li class="small" style="background-image: url(static/img/mountain.jpg);"></li>
+        </ul>
+    </section>
+
+    <section id="reviews" class="reviews">
+        <h3 class="title">What others say:</h3>
+
+        <p class="quote">Mauris sit amet mauris a arcu eleifend ultricies eget ut dolor. Class aptent taciti sociosqu ad
+            litora torquent per conubia nostra, per inceptos himenaeos.</p>
+        <p class="author">— Patrick Farrell</p>
+
+        <p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum
+            ultrices. Morbi vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
+        <p class="author">— George Smith</p>
+
+        <p class="quote">Donec commodo dolor augue, vitae faucibus tortor tincidunt in. Aliquam vitae leo quis mi
+            pulvinar
+            ornare. Integer eu iaculis metus.</p>
+        <p class="author">— Kevin Blake</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h3 class="title">Join our newsletter</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi
+            vitae
+            pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
+        <hr>
+
+        <form>
+            <input type="email" placeholder="Email">
+            <a href="#" class="btn">Subscribe now</a>
+        </form>
+    </section>
 {% endblock %}
