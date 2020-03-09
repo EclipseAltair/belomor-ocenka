@@ -10,19 +10,19 @@ from main import views as main_views
 
 robots = 'User-agent: *\n' \
          'Disallow: /admin\n' \
-         'Sitemap: http://site.site/sitemap.xml'
+         'Sitemap: https://belomor-ocenka.ru/sitemap.xml'
 
 sitemaps = {
     'static': StaticViewSitemap,
     }
 
-manifest = '{"name":"",' \
-           '"short_name":"",' \
+manifest = '{"name":"Belomor Ocenka",' \
+           '"short_name":"belomor ocenka",' \
            '"start_url":"/",' \
            '"display":"standalone",' \
-           '"theme_color":"#000",' \
+           '"theme_color":"#0000ff",' \
            '"background_color":"#000",' \
-           '"description":"",' \
+           '"description":"Беломор оценка - все виды независимых оценок и автоэкспертиз.",' \
            '"serviceworker":{"src": "/sw.js"},' \
            '"icons":' \
             '[{"src":"img/favicon-16x16.png",' \
