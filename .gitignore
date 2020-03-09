@@ -13,6 +13,7 @@ migrations/
 /devmanage.py
 /belomor-ocenka/devsettings.py
 /belomor-ocenka/devurls.py
+/belomor-ocenka/secret.py
 /static/assets/sass/
 /static/assets/js/
 /.bowerrc
