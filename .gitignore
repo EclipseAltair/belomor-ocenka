@@ -9,11 +9,11 @@ migrations/
 /static/assets/libs/
 /node_modules/
 /package.json
-/belomor-ocenka/secret.py
+belomor-ocenka/secret.py
+belomor-ocenka/devsettings.py
+belomor-ocenka/devurls.py
 /devmanage.py
-/belomor-ocenka/devsettings.py
-/belomor-ocenka/devurls.py
-/belomor-ocenka/secret.py
+/static/assets/libs/
 /static/assets/sass/
 /static/assets/js/
 /.bowerrc
