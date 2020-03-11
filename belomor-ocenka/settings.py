@@ -9,7 +9,7 @@ SECRET_KEY = SECRET_KEY
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['92.63.107.29', 'belomor-ocenka.ru', 'localhost']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
