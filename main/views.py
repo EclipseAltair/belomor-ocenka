@@ -17,11 +17,11 @@ def feedback(request):
             form.save()
             name = request.POST['name']
             phone = request.POST['phone']
-            # subject = 'Новый клиент!'
-            # message = 'Имя: ' + name + ' | Номер телефона: ' + phone
-            # sender = 'digitalrushmailer@gmail.com'
-            # recipient = 'belomorocenka@yandex.ru'
-            # send_mail(subject, message, sender, [recipient], fail_silently=False)
+            subject = 'Новый клиент!'
+            message = 'Имя: ' + name + ' | Номер телефона: ' + phone
+            sender = 'digitalrushmailer@gmail.com'
+            recipient = 'belomorocenka@yandex.ru'
+            send_mail(subject, message, sender, [recipient], fail_silently=False)
             return JsonResponse({})
 
 
