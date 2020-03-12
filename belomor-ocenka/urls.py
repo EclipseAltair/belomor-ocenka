@@ -46,7 +46,7 @@ urlpatterns = [
     path('robots.txt', lambda r: HttpResponse(robots, content_type="text/plain")),
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
     path('manifest.json', lambda r: HttpResponse(manifest, content_type="application/json")),
-    path('sw.js', (TemplateView.as_view(template_name="sw.js", content_type='application/javascript', )), name='sw.js'),
+    # path('sw.js', (TemplateView.as_view(template_name="sw.js", content_type='application/javascript', )), name='sw.js'),
 ]
 
 handler404 = main_views.error_404
