@@ -11,7 +11,13 @@
 // var urlsToCache = [
 //   '/',
 //   '/static/css/styles.min.css',
-//   '/static/dist-js/scripts.min.js'
+//   '/static/dist-js/scripts.min.js',
+//   '/static/img/1.jpg',
+//   '/static/img/2.jpg',
+//   '/static/img/3.jpg',
+//   '/static/img/4.jpg',
+//   '/static/img/5.jpg',
+//   '/static/img/6.jpg',
 // ];
 //
 // self.addEventListener('install', function(event) {
