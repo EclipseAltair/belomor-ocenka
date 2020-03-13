@@ -20,7 +20,7 @@ manifest = '{"name":"Belomor Ocenka",' \
            '"short_name":"belomor ocenka",' \
            '"start_url":"/",' \
            '"display":"standalone",' \
-           '"theme_color":"#0000ff",' \
+           '"theme_color":"#40439b",' \
            '"background_color":"#000",' \
            '"description":"Беломор оценка - все виды независимых оценок и автоэкспертиз.",' \
            '"serviceworker":{"src": "/sw.js"},' \
