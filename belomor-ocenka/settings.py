@@ -102,11 +102,6 @@ YANDEX_METRICA_WEBVISOR	= True
 YANDEX_METRICA_TRACKHASH = True
 
 
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'media')
-# 
-# MEDIA_URL = '/media/'
-
-
 STATIC_ROOT = os.path.join(BASE_DIR, 'static', 'static')
 
 STATIC_URL = '/static/'
