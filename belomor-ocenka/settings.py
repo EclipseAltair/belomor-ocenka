@@ -18,7 +18,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'analytical',
     'main'
 ]
 
@@ -80,15 +79,10 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 LANGUAGE_CODE = 'ru'
-
 TIME_ZONE = 'UTC'
-
 USE_I18N = True
-
 USE_L10N = True
-
 USE_TZ = True
-
 SITE_ID = 1
 
 EMAIL_USE_TLS = True
@@ -97,15 +91,8 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = EMAIL
 EMAIL_HOST_PASSWORD = EMAIL_PASSWORD
 
-YANDEX_METRICA_COUNTER_ID = '61137964'
-YANDEX_METRICA_WEBVISOR	= True
-YANDEX_METRICA_TRACKHASH = True
-
-
 STATIC_ROOT = os.path.join(BASE_DIR, 'static', 'static')
-
 STATIC_URL = '/static/'
-
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static', 'assets'),

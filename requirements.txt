@@ -1,7 +1,6 @@
 asgiref==3.2.3
 beautifulsoup4==4.8.2
 Django==2.2.8
-django-analytical==2.5.0
 django-livereload-server==0.3.2
 psycopg2==2.8.4
 pytz==2019.3
