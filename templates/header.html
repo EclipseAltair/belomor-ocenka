@@ -1,13 +1,31 @@
 {% load static %}
 
 <header>
-  <img src="{% static 'img/apple-touch-icon-60x60.png' %}" alt="Беломор оценка">
-  <nav>
-    <ul>
-      <li><a href="#hero">Главная</a></li>
-      <li><a href="#our-work">Услуги</a></li>
-{#      <li><a href="#reviews">Отзывы</a></li>#}
-      <li><a href="#contact">Контакты</a></li>
-    </ul>
+  <nav class="navbar fixed-top navbar-expand-md navba navbar-bg">
+    <div class="container">
+      <img src="{% static 'img/apple-touch-icon-60x60.png' %}" alt="Беломор оценка">
+      <h4 class="brand"><a href="" class="brand-a"></a></h4>
+      <button class="navbar-toggler" type="button" data-toggle="collapse"
+              data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#hero">ГЛАВНАЯ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">УСЛУГИ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#reviews">ОТЗЫВЫ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">КОНТАКТЫ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
 </header>

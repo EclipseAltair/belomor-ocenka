@@ -1,24 +1,27 @@
-*.sqlite3
-*.pyc
-*~
-__pycache__/
+# IDE
 .idea/
-.vscode/
-/boenv/
+
+# Python
+*.pyc
+__pycache__/
+
+# Django
 migrations/
-/static/assets/libs/
-/node_modules/
-/package.json
-belomor-ocenka/secret.py
-belomor-ocenka/devsettings.py
-belomor-ocenka/devurls.py
+/boenv/
+/belomor-ocenka/secret.py
+/belomor-ocenka/devsettings.py
+/belomor-ocenka/devurls.py
 /devmanage.py
+/requirements-dev.txt
 /static/assets/libs/
 /static/assets/sass/
 /static/assets/js/
+
+# Other
+/node_modules/
 /.bowerrc
 /.editorconfig
-/.eslintrc.json
 /.npmrc
 /gulpfile.js
+/package.json
 /README.md

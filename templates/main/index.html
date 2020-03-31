@@ -17,53 +17,71 @@
 {% endblock %}
 
 {% block content %}
-  <section id="hero" class="hero">
-    <div class="background-image" style="background-image: url(static/img/bg.jpg);"></div>
-    <h1>Беломор Оценка</h1>
-    <h2>Все виды оценок и автоэкспертиз. Выезд эксперта.</h2>
-    <a href="tel:+79523002888" class="btn btn-phone">+7 (952) 300-28-88</a>
+  <section id="hero" class="bg">
+    <div class="row align-items-center size-screen">
+      <div class="col-md-8 mx-auto text-center">
+        <h1>Беломор Оценка</h1>
+        <h2>Все виды оценок и автоэкспертиз. Выезд эксперта.</h2>
+        <button class="btn btn-danger"><a href="tel:+79523002888">+7 (952) 300-28-88</a></button>
+      </div>
+    </div>
   </section>
 
-  <section id="our-work" class="our-work">
-    <h2 class="title">Услуги</h2>
+  <section id="services" class="container services">
+    <h3 class="mt-5 text-center">Услуги</h3>
     <hr>
-    <ul class="grid">
-      <li class="small" style="background-image: url(static/img/1.jpg);"></li>
-      <li class="large" style="background-color: #fff;">
-        <h3>Оценка транспорта</h3>
-        <br>
-        • Оценка автомобиля
-        <br>
-        • Оценка других видов транспортных средств
-      </li>
-
-      <li class="small" style="background-image: url(static/img/2.jpg);"></li>
-      <li class="large mblg" style="background-color: #fff;">
-        <h3>Оценка после ДТП</h3>
+    
+    <h4 class="mt-5 text-center">Оценка транспорта</h4>
+    <div class="row">
+      <div class="col">
+        <img src="{% static 'img/1.jpg' %}" alt="">
+      </div>
+      <div class="col">
+          <br>
+          • Оценка автомобиля
+          <br>
+          • Оценка других видов транспортных средств
+      </div>
+    </div>
+    
+    <h4 class="mt-5 text-center">Оценка после ДТП</h4>
+    <div class="row">
+      <div class="col">
+        <img src="{% static 'img/1.jpg' %}" alt="">
+      </div>
+      <div class="col">
         <br>
         • Оценка ущерба после ДТП в условиях сертифицированного автосервиса с применением диагностического оборудования
         <br>
         • Помощь независимого эксперта в аварийной ситуации
         <br>
         • Взыскание ущерба по ОСАГО
-      </li>
-
-      <li class="small" style="background-image: url(static/img/3.jpg);"></li>
-      <li class="large mblg" style="background-color: #fff;">
-        <h3>Опыт более 10 лет!</h3>
+      </div>
+    </div>
+    
+    <h4 class="mt-5 text-center">Опыт более 10 лет!</h4>
+    <div class="row">
+      <div class="col">
+        <img src="{% static 'img/1.jpg' %}" alt="">
+      </div>
+      <div class="col">
         <br>
         • Предоставляем бесплатную стоянку вашему автомобилю на период оценки
         <br>
         • Предоставим подменный автомобиль нашим клиентам, на условиях аренды, на период оценки автомобиля
-      </li>
-
-      <li class="small" style="background-image: url(static/img/4.jpg);"></li>
-      <li class="large" style="background-color: #fff;">
-        <h3>Наш партнер</h3>
+      </div>
+    </div>
+    
+    <h4 class="mt-5 text-center">Наш партнер</h4>
+    <div class="row">
+      <div class="col">
+        <img src="{% static 'img/1.jpg' %}" alt="">
+      </div>
+      <div class="col">
         <br>
         СтасАвто Сервис - <a href="http://www.bosch29.ru/">bosch29.ru</a>
-      </li>
-    </ul>
+      </div>
+    </div>
   </section>
 
 {#  <section id="reviews" class="reviews">#}
@@ -83,20 +101,20 @@
 {#    <p class="author">— Kevin Blake</p>#}
 {#  </section>#}
 
-  <section id="contact" class="contact">
-    <h2 class="title">Контакты</h2>
-    <p>
+  <section class="container contact mt-5" id="contact">
+    <h3 class="text-center">Контакты</h3>
+    <p class="text-center">
       Выберите ближайший офис и звоните сейчас <a href="tel:+79523002888">+7(952)3002888</a>
       <br>
       Либо оставьте свой номер. И мы перезвоним Вам!
     </p>
-    <hr>
+    <hr class="mt-4 mb-4">
     <form id="feedback" action="{% url 'feedback' %}" method="POST">{% csrf_token %}
-      <label for="name">Имя:</label>
+      <label for="name" class="pl-3">Имя:</label>
       {{ form.name }}
-      <label for="phone">Телефон:</label>
+      <label for="phone" class="pl-3 mt-3">Телефон:</label>
       {{ form.phone }}
-      <button id="button-feedback" class="btn" type="submit">ОТПРАВИТЬ</button>
+      <button id="button-feedback" class="mt-3 btn btn-danger" type="submit">ОТПРАВИТЬ</button>
     </form>
     <br>
     <iframe title="belomor-ocenka"
