@@ -28,9 +28,8 @@
   </section>
 
   <section id="services" class="container services">
-    <h3 class="mt-5 text-center">Услуги</h3>
+    <h3 class="mt-5 text-center">УСЛУГИ</h3>
     <hr>
-    
     <h4 class="mt-5 text-center">Оценка транспорта</h4>
     <div class="row">
       <div class="col">
@@ -43,7 +42,6 @@
           • Оценка других видов транспортных средств
       </div>
     </div>
-    
     <h4 class="mt-5 text-center">Оценка после ДТП</h4>
     <div class="row">
       <div class="col">
@@ -58,7 +56,6 @@
         • Взыскание ущерба по ОСАГО
       </div>
     </div>
-    
     <h4 class="mt-5 text-center">Опыт более 10 лет!</h4>
     <div class="row">
       <div class="col">
@@ -71,54 +68,58 @@
         • Предоставим подменный автомобиль нашим клиентам, на условиях аренды, на период оценки автомобиля
       </div>
     </div>
-    
-    <h4 class="mt-5 text-center">Наш партнер</h4>
-    <div class="row">
-      <div class="col">
-        <img src="{% static 'img/1.jpg' %}" alt="">
-      </div>
-      <div class="col">
-        <br>
-        СтасАвто Сервис - <a href="http://www.bosch29.ru/">bosch29.ru</a>
-      </div>
-    </div>
   </section>
 
-{#  <section id="reviews" class="reviews">#}
-{#    <h2 class="title">Отзывы</h3>#}
-{#    <hr>#}
-{#    <p class="quote">Mauris sit amet mauris a arcu eleifend ultricies eget ut dolor. Class aptent taciti sociosqu ad#}
-{#      litora torquent per conubia nostra, per inceptos himenaeos.</p>#}
-{#    <p class="author">— Patrick Farrell</p>#}
-{##}
-{#    <p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum#}
-{#      ultrices. Morbi vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>#}
-{#    <p class="author">— George Smith</p>#}
-{##}
-{#    <p class="quote">Donec commodo dolor augue, vitae faucibus tortor tincidunt in. Aliquam vitae leo quis mi#}
-{#      pulvinar#}
-{#      ornare. Integer eu iaculis metus.</p>#}
-{#    <p class="author">— Kevin Blake</p>#}
-{#  </section>#}
+  <section id="reviews" class="container reviews">
+    <h3 class="mt-5 text-center">ОТЗЫВЫ</h3>
+    <hr>
+    <p class="quote">Mauris sit amet mauris a arcu eleifend ultricies eget ut dolor. Class aptent taciti sociosqu ad
+      litora torquent per conubia nostra, per inceptos himenaeos.</p>
+    <p class="author">— Patrick Farrell</p>
 
-  <section class="container contact mt-5" id="contact">
-    <h3 class="text-center">Контакты</h3>
-    <p class="text-center">
-      Выберите ближайший офис и звоните сейчас <a href="tel:+79523002888">+7(952)3002888</a>
+    <p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum
+      ultrices. Morbi vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
+    <p class="author">— George Smith</p>
+
+    <p class="quote">Donec commodo dolor augue, vitae faucibus tortor tincidunt in. Aliquam vitae leo quis mi
+      pulvinar
+      ornare. Integer eu iaculis metus.</p>
+    <p class="author">— Kevin Blake</p>
+  </section>
+
+  <section class="contact pt-4" id="contact">
+    <div class="container">
+      <h3 class="text-center">КОНТАКТЫ</h3>
+      <p class="text-center">
+        Выберите ближайший офис и звоните сейчас <a href="tel:+79523002888">+7(952)3002888</a>
+        <br>
+        Либо оставьте свой номер. И мы перезвоним Вам!
+      </p>
+      <hr class="mt-4 mb-4">
+      <form id="feedback" action="{% url 'feedback' %}" method="POST">{% csrf_token %}
+        <label for="name" class="pl-3">ИМЯ:</label>
+        {{ form.name }}
+        <label for="phone" class="pl-3 mt-3">ТЕЛЕФОН:</label>
+        {{ form.phone }}
+        <button id="button-feedback" class="mt-3 btn btn-danger" type="submit">ОТПРАВИТЬ</button>
+      </form>
       <br>
-      Либо оставьте свой номер. И мы перезвоним Вам!
-    </p>
-    <hr class="mt-4 mb-4">
-    <form id="feedback" action="{% url 'feedback' %}" method="POST">{% csrf_token %}
-      <label for="name" class="pl-3">Имя:</label>
-      {{ form.name }}
-      <label for="phone" class="pl-3 mt-3">Телефон:</label>
-      {{ form.phone }}
-      <button id="button-feedback" class="mt-3 btn btn-danger" type="submit">ОТПРАВИТЬ</button>
-    </form>
-    <br>
-    <iframe title="belomor-ocenka"
-            src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac0de73b3ac269c7b2202c7c59f586c8e43bb25eb3348e2d36785e27e6c9c8328&amp;source=constructor"
-            width="100%" height="400" frameborder="0" loading="lazy"></iframe>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <iframe title="belomor-ocenka"
+                  src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac0de73b3ac269c7b2202c7c59f586c8e43bb25eb3348e2d36785e27e6c9c8328&amp;source=constructor"
+                  width="100%" height="400" frameborder="0" loading="lazy"></iframe>
+        </div>
+        <div class="col-lg-4 align-self-center">
+          <p class="text-center mt-2">Наш партнер</p>
+          <div class="image-center">
+            <img src="{% static 'img/4.jpg' %}" alt="">
+          </div>
+          <p class="text-center mt-3">СтасАвто Сервис</p> 
+          <hr>
+          <p class="text-center"><a href="http://www.bosch29.ru/">bosch29.ru</a></p>
+        </div>
+      </div>
+    </div>
   </section>
 {% endblock %}
