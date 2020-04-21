@@ -5,7 +5,7 @@ from django.http import JsonResponse
 from .forms import ClientForm
 
 
-def home(request):
+def main(request):
     form = ClientForm(request.POST or None)
     return render(request, 'main/index.html', locals())
 
