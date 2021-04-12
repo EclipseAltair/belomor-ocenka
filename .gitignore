@@ -6,7 +6,6 @@
 __pycache__/
 
 # Django
-migrations/
 /boenv/
 /belomor-ocenka/secret.py
 /belomor-ocenka/devsettings.py
